@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #958476;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.header {
+  background-color: #111111;
+  padding: 15px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+    font-family: 'Courier', monospace;
+  font-size: 50px;
+  color: #f4c542;
+}
+
+
+main h1{
+      font-family: 'Courier', monospace;
+  font-size: 24px;
+  color: #111;
+
+}
+
+.email h2 {
+       font-family: 'Courier', monospace;
+  font-size: 24px;
+  color: #111;
+}
+
+.email p {
+       font-family: 'Courier', monospace;
+  font-size: 24px;
+  color: #111;
+}
+
+.telefone h2 {
+       font-family: 'Courier', monospace;
+  font-size: 24px;
+  color: #111;
+}
+
+.telefone p {
+       font-family: 'Courier', monospace;
+  font-size: 24px;
+  color: #111;
+}
+
+.redes-sociais ul {
+       font-family: 'Courier', monospace;
+  font-size: 24px;
+  color: #111;
+}
