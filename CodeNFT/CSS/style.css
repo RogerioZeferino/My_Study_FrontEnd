@@ -2,32 +2,439 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
 body {
     background-color: #000000;
-    color: #FFFFFF
+    color: #FFFFFF;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 header {
+    margin: 16px 120px;
     background-color: #000000;
-    padding: 20px 0;
-    border-bottom: 1px solid #333;
+    padding: 60ps 60px;
+    border-bottom: 1px solid #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-navbar.logo img {
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
     width: 40px;
     height: 40px;
+    margin-top: 15px;
 }
 
-navbar.logo h1 {
-    font-size: 32px;
-    margin-left: 10px;
+.logo h1 {
+    font-size: 24px;
+    font-weight: 700;
 }
 
-navbar.ul {
-    list-style: none;
+.navbar {
     display: flex;
-    justify-self: start;
-    gap: 20px;
+    gap: 15px;
 }
+
+.discord-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    background-color: #131313;
+    border: 1px solid #333;
+}
+
+.discord-button img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.connect-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    background-color: #F7FC0E;
+}
+
+.connect-button img {
+    width: 20px;
+    height: 20px;
+}
+
+main {
+    padding-top: 40px;
+}
+
+/* Classe banner */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.banner-background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    color: #FFFFFF;
+    padding: 420px 20px 0;
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 52px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-shadow: 0px 2px 10px rgba(0,0,0,0.6);
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    text-shadow: 0px 2px 8px rgba(0,0,0,0.6);
+}
+
+    /* Classe collectors-section */
+
+
+.collectors-section {
+  text-align: center;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.collectors-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.collectors-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 20px;
+  max-width: 1500px;
+}
+
+.collectors-grid li {
+  background-color: #131313;
+  border-radius: 40px;
+  width: 170px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.collectors-grid li:hover {
+  transform: translateY(-3px);
+}
+
+.collectors-grid img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #222;
+}
+
+.collectors-grid .text {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.collectors-grid h3 {
+  font-size: 10px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.collectors-grid p {
+  font-size: 7px;
+  color: #fff;
+  margin: 1px 0 0;
+}
+
+
+/* Classe collection-section */
+
+.collection-section {
+    text-align: center;
+    margin-bottom: 80px; /* Espaço no final */
+}
+
+.collection-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+ 
+.collection-grid {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.collection-grid .card {
+    background-color: #131313;
+    border: 1px solid #131313;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%; /* Ocupa a largura total da coluna */
+    text-align: start;
+    transition: transform 0.2s ease;
+}
+
+.collection-grid .card:hover {
+    transform: translateY(-5px);
+    border-color: #F7FC0E; /* Efeito ao passar o mouse */
+}
+
+.collection-grid .card img {
+    width:324px ;
+    height: 276.96px; /* Altura fixa para as imagens dos NFTs */
+    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.collection-grid .card h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Responsividade */
+
+@media (max-width: 1024px) {
+    header {
+        padding: 20px;
+    }
+
+    .banner {
+        height: 450px;
+    }
+
+    .banner-content h1 {
+        font-size: 40px;
+    }
+
+    .banner-content p {
+        font-size: 15px;
+    }
+
+    .collectors-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Mais colecionadores por linha */
+        padding: 0 20px;
+    }
+
+    .collection-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta para 2-3 colunas */
+        padding: 0 20px;
+    }
+}
+
+/* Para tablets (telas até 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Empilha logo e botões */
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .navbar {
+        justify-content: center; /* Centraliza os botões */
+        width: 100%;
+    }
+    
+    .nav-button {
+        flex: 1; /* Botões ocupam o espaço disponível */
+        justify-content: center; /* Centraliza conteúdo do botão */
+        max-width: 180px; /* Limita a largura dos botões */
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .banner {
+        height: 400px;
+        margin-bottom: 40px;
+    }
+
+    .banner-content h1 {
+        font-size: 32px;
+    }
+
+    .banner-content p {
+        font-size: 14px;
+    }
+
+    .collectors-section h2, .collection-section h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .collectors-grid {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); /* Ajusta colecionadores */
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .collectors-grid img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .collectors-grid h3 {
+        font-size: 13px;
+    }
+
+    .collectors-grid p {
+        font-size: 11px;
+    }
+
+    .collection-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta para 2 colunas */
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .collection-grid .card img {
+        height: 180px; /* Diminui a altura da imagem do NFT */
+    }
+
+    .collection-grid .card h3 {
+        font-size: 18px;
+    }
+}
+
+/* Para smartphones (telas até 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+    
+    .logo {
+        justify-content: center; /* Centraliza o logo no topo */
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column; /* Botões da navbar um em cima do outro */
+        gap: 10px;
+    }
+
+    .nav-button {
+        max-width: 250px; /* Botões maiores para toque */
+        margin: 0 auto; /* Centraliza os botões */
+    }
+
+    .banner {
+        height: 300px; /* Banner mais baixo em celulares */
+        margin-bottom: 30px;
+    }
+
+    .banner-content h1 {
+        font-size: 24px;
+    }
+
+    .banner-content p {
+        font-size: 13px;
+    }
+
+    .collectors-section h2, .collection-section h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .collectors-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* 3-4 colecionadores por linha */
+        gap: 10px;
+        padding: 0 5px;
+    }
+
+    .collectors-grid img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .collectors-grid h3 {
+        font-size: 12px;
+    }
+
+    .collectors-grid p {
+        font-size: 10px;
+    }
+
+    .collection-grid {
+        grid-template-columns: 1fr; /* Uma única coluna para NFTs */
+        padding: 0 5px;
+    }
+
+    .collection-grid .card {
+        max-width: 300px; /* Limita a largura do card em coluna única */
+        margin: 0 auto; /* Centraliza o card */
+    }
+
+    .collection-grid .card img {
+        height: 220px; /* Altura da imagem para celulares */
+    }
+}
+
+
+
+
